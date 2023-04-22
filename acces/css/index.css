@@ -155,9 +155,7 @@
     position: relative;
     
 }
-.header__logo-img{
-   
-}
+
 .header__slogan-img{
     margin: auto;
     padding-right: 200px;
@@ -284,8 +282,6 @@
     width: 100%;
 }
 /* slider */
-.container__slider-title {
-}
 
 .container__slider-title {
     color: var(--white-color);
