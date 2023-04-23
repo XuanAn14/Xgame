@@ -340,6 +340,7 @@
 .footer__contact-icon {
     font-size: 3.2rem;
     margin: 20px 20px 0 0 ;
+    cursor: pointer;
 }
 
 .footer__content-title {
@@ -370,6 +371,10 @@
     font-size: 1.4rem;
     line-height: 40px;
     display: flex;
+}
+
+.content-info__item a:hover, .footer__content-support a:hover {
+    color: #999;
 }
 
 .content-info__item,.content-support__item {

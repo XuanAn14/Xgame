@@ -598,6 +598,196 @@
     color: #bbb9b9;
 }
 
+/* product list */
+.product__list-style {
+    margin: 60px 0 60px 0;
+    background-color: #2a475e;
+    padding-bottom: 20px;
+}
+
+.product__list-style-title {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.product__list-style-item {
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.product__list-style-list {
+    padding: 0 20px;
+}
+
+.product__list-style-content {
+    position: relative;
+}
+
+.product__list-style-content--active {
+    display: block;
+}
+
+
+.product__list-style-content-item{
+    height: 69px;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.product__list-style-content-item:hover  .product__list-style-preview{
+    display: block;
+
+}
+
+.product__list-style-content-item:hover  .product__list-style-content-link , .product__list-style-content-item:hover  .product__list-style-content-link p {
+    background-color: #92b5cc;
+    color: var(--black-color);
+    transition: ease-in 0.1s;
+
+}
+
+
+.product__list-style-btn--active {
+    color: var(--white-color) !important;
+    background-color: rgba(0,0,0,0.2);
+    height: 28px;
+    display: block;
+    width: 110px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.product__list-style-btn--active::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 10px;
+    top: 100%;
+    z-index: 1;
+}
+
+.product__list-style-btn {
+    color: var(--text-color);
+    height: 28px;
+    display: block;
+    width: 110px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product__list-style-content-link {
+    text-decoration: none;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,0.2);
+
+}
+
+.product__list-style-content-link img {
+    height: 74px;
+}
+
+.list-style-content-item__left {
+    margin: 0 20px;
+    width: 80%;
+}
+
+.list-style-content-item__left h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.list-style-content-item__left p {
+    color: #999;
+    font-size: 1rem;
+}
+
+.list-style-content-item__right {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.list-style-content-item__sale {
+    display: flex;
+    align-items: center;
+    background-color: #4c6b22;
+    color: #BEEE11;
+    font-size: 1.6rem;
+    padding: 4px;
+    margin: auto;
+    text-align: center;
+}
+
+.list-style-content-item__prices {
+    position: relative;
+}
+
+.list-style-content-item__old-price {
+    font-size: 1.2rem;
+    float: right;
+    color: #738895;
+}
+
+.list-style-content-item__old-price::before {
+    content: "";
+    top: 18%;
+    width: 70%;
+    position: absolute;
+    border-bottom: 1px solid #738895;
+    transform: skewY(-8deg);
+}
+
+.list-style-content-item__new-price {
+    font-size: 1.6rem;
+}
+
+.product__list-style-preview {
+    background-color:#92b5cc;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    top: 0;
+}
+
+.product__list-style-preview-list {
+    display: flex;
+    margin-bottom: 14px;
+}
+
+.product__list-style-preview-title {
+    color: var(--black-color);
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top:0 ;
+}
+
+.product__list-style-preview-list a{
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: rgba(0,0,0,0.5);
+    margin-right: 10px;
+    padding: 6px;
+}
+
+.product__list-style-preview-list a:hover {
+    color: var(--text-color);
+}
+
+.product__list-style-preview-img {
+    width: 100%;
+    height: 172px;
+}
+
 /* footer */
 .footer {
     height: 250px;
@@ -617,12 +807,12 @@
 .footer__contact-icons {
     color: var(--white-color);
     display: flex;
-
 }
 
 .footer__contact-icon {
     font-size: 3.2rem;
     margin: 20px 20px 0 0 ;
+    cursor: pointer;
 }
 
 .footer__content-title {
@@ -653,6 +843,10 @@
     font-size: 1.4rem;
     line-height: 40px;
     display: flex;
+}
+
+.content-info__item a:hover, .footer__content-support a:hover {
+    color: #999;
 }
 
 .content-info__item,.content-support__item {
