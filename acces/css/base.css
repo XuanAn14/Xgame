@@ -116,7 +116,7 @@ ul {
 }
 
 .modal__body {
-    background-color: #181a21;
+    background-color: var(--white-color);
     margin: auto;
     z-index: 1;
     border-radius: 5px;
